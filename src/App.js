@@ -15,6 +15,13 @@ function App() {
   useEffect(() => {
     console.log("Component Mounted");
   },[multiplyTwo]);
+
+  //agar use effect k end may [] laga dege tw isko ham component did mount
+  // khete hay. iska matlab k woh just page load may ek bar hi run hoga
+
+  //agar array may ham koi dependency dal de jese abhi opar dala hay tw isko
+  // component did update khete hay. iska matlab ye k ye har bar run hoga
+  // specific dependency k run honay may
   return (
     <>
       {/* use effect hook */}
